@@ -1,0 +1,120 @@
+.details {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background-color: $primary-color;
+    border-radius: 20px;
+    padding: 40px 20px;
+    border: 2px solid black;
+
+    box-shadow: 0 0 22px 100vh rgba(0, 0, 0, 0.5);
+
+
+    &__container {
+        overflow-y: scroll;
+        height: 100%;
+        padding: 20px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+
+    &__ingredient {
+        font-size: 1.1rem;
+        padding-bottom: 6px;
+    }
+
+    &__ingredients {
+        margin-left: 26px;
+        margin-bottom: 25px;
+        list-style-type: square;
+    }
+
+    &__steps {
+        display: flex;
+        flex-flow: column;
+        margin-left: 21px;
+        margin-bottom: 35px;
+    }
+
+    &__ingredients>*,
+    &__steps>* {
+        margin-bottom: 3px;
+    }
+
+}
+
+
+.close {
+    background-color: red;
+    position: absolute;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+@media (min-width: $breakpoint-ipad) {
+    .details {
+        padding: 40px 60px;
+        max-width: 800px;
+        margin: 0 auto;
+
+        &__steps {
+            margin-top: 40px;
+        }
+
+        &__ingredients>*,
+        &__steps>* {
+            margin-bottom: 12px;
+        }
+
+    }
+
+    .close {
+        top: 18px;
+        right: 18px;
+        font-size: 60px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: $breakpoint-1024) {
+    .details {
+        padding: 40px 60px;
+
+        &__steps {
+            margin-top: 40px;
+        }
+
+        &__ingredients>*,
+        &__steps>* {
+            margin-bottom: 12px;
+        }
+
+    }
+
+    .close {
+        top: 18px;
+        right: 18px;
+        font-size: 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+}

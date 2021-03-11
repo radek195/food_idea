@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Todays food idea</title>
+</head>
+<body>
+    <header>
+        <h1>Todays <span class="deco">food</span> idea!</h1>
+        <h2>Your <span class="deco">No. 1</span> site to search for <span class="deco">food recipes</span>.</h2>
+        <button onClick="scroll(0, 100);" class="start__button">Lets Start! <i class="fas fa-play"></i></button>
+    </header>
+
+    <main>
+        <div class="search">
+            <div class="categories">
+                <h3 class="categories__title">Search <span class="deco">recipe</span> by:</h3>
+                <div class="categories__container">
+                    <button class="categories__item categorie-search">Ingredient</button>
+                    <button class="categories__item categorie-search">Calories</button>
+                    <button class="categories__item categorie-search">Nutrients</button>
+                </div>
+            </div>
+        
+            <div class="ingredient search-item hide">
+                <input type="text" name="ingredient" class="ingredient__input" placeholder="eg. apple">
+                <ul class="ingredient__list">
+                    
+                </ul>
+            </div>
+
+            <div class="calories search-item hide" >
+                <p>min. calories: </p><input type="number" name="ingredient" class="calories__input calories__input--min" >
+                <p>max. calories: </p><input type="number" name="ingredient" class="calories__input calories__input--max" >
+                <button class="calories__add add__info">Apply</button>
+            </div>
+
+            <div class="nutrients search-item hide">
+                <div class="nutrients__container">
+                    <div class="nutrients__item"></div>
+                    <div class="nutrients__item">min</div>
+                    <div class="nutrients__item">max</div>
+                    <div class="nutrients__type nutrients__item">Carb</div>
+                    <div class="nutrients__item"><input type="number" class="nutrients__input min-carb nutrients__item"></div>
+                    <div class="nutrients__item"><input type="number" class="nutrients__input max-carb nutrients__item"></div>
+
+                    <div class="nutrients__type nutrients__item">Protein</div>
+                    <div class="nutrients__item"><input type="number" class="nutrients__input min-prot nutrients__item"></div>
+                    <div class="nutrients__item"><input type="number" class="nutrients__input max-prot nutrients__item"></div>
+
+                    <div class="nutrients__type nutrients__item">Fat</div>
+                    <div class="nutrients__item"><input type="number" class="nutrients__input min-fat nutrients__item"></div>
+                    <div class="nutrients__item"><input type="number" class="nutrients__input max-fat nutrients__item"></div>
+                </div>
+                <button class="nutrients__add add__info">Apply</button>
+            </div>
+            <div class="parameters">
+                
+                <div class="parameters__search">
+                    <span class="deco"><i class="fas fa-search"></i></span>
+                </div>
+                <div class="parameters__item parameters__info hide">info <i class="question far fa-question-circle"></i></i></div>
+            </div>
+            <div class="info hide">
+                <div class="info__close">+</div>
+                <ul class="info__list"></ul>
+                <div class="info__reset">Reset <i class="fas fa-ban"></i></div>
+            </div>
+        </div>
+        
+        <div class="result">
+            
+            
+        </div>
+        <div class="details hide">
+            <div class="details__container">
+                <h4 class="details__title"></h4>
+                <p class="details__ingredient">Ingredients:</p>
+                <ul class="details__ingredients">
+                
+                </ul>
+                <ol class="details__steps">
+                
+                </ol>
+                <p>Bon appetit!</p>
+            </div>
+            <div class="close">+</div>
+        </div>
+    </main>
+    <script src="dist/js/recipe_details.js"></script>
+    <script src="dist/js/info_search.js"></script>
+    <script src="dist/js/Search.js"></script>
+    <script src="dist/js/select_search_type.js"></script>
+    <script src="dist/js/search_criteria.js"></script>
+    <script src="dist/js/recipe_search.js"></script>
+    <script src="dist/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/9baca7b6e6.js" crossorigin="anonymous"></script>
+</body>
+</html>
