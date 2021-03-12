@@ -140,7 +140,7 @@ header {
   flex-direction: column;
   color: white;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("dist/img/churros.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://github.com/radek195/food_idea/blob/master/dist/img/churros.jpg?raw=true");
   background-size: 325%;
   background-position: 80% 0%;
   background-repeat: no-repeat;
